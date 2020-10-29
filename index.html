@@ -43,8 +43,6 @@
           position: -webkit-sticky;
           position: sticky;
           top: -1px;
-          border-color: black;
-          background-color: gray;
           padding: 100px;
           transition: opacity 0.8s;
          -webkit-transition: opacity 0.8s;
@@ -100,21 +98,14 @@
    }
 
    .text1opacity, .text2opacity {
-        font-size:30px;
+        font-size:15px;
         fill:blue;
         opacity:0;
         transition: opacity 0.8s;
+        color: red;
          -webkit-transition: opacity 0.8s;
         }
 
-    .text3opacity {
-        font-size:30px;
-        fill:blue;
-        opacity:0;
-        transition: opacity 0.8s;
-        color: blue;
-         -webkit-transition: opacity 0.8s;
-        }
 
     .text6opacity, .text7opacity {
         font-size:30px;
@@ -160,11 +151,11 @@
      <div class="row">
      	<div class="col-4">
 
-      <p>The basic idea of scrollytelling is that you can set up various "scene" as you scroll the webpage through different elements. This is enabled by the "ScrollMagic.Scene" function from the ScrollMagic JavaScript Library.  These scenes can be various animations specified in CSS, such as opacity, color, font-size and others. When creating a scene, you need to associate a particular content element (e.g., a paragraph) as a trigger to activate this scene by using the element id as a "triggerElement". So as you scrolling through different HTML elements on the webpage, you activate different scenes in sequence. In this .html file, you will see this paragraph does not have an id as a trigger, so nothing happens at this moment. When you start to scroll down to the next paragraph (with an id "text1"), you will trigger a MagicScroll scene that manipulates "TEXT_1_OPACITY" (a paragraph) with the "text1opacity" CSS class.</p>
-
+      <br><br>
+      <p> Our topic is about remote learning during Covid-19. We primarily focus on the education situation for children in  New York City.  </p>
       <br><br>
 
-     	<p id="text1"> This is the paragraph with a "text1" id. In the script "ScrollMagic.Scene()", we have created a scene ("ScrollMagic.Scene") using this paragraph as a "trigger". Specifically, we use the paragraph id ("text1") as a "triggerElement" to activate the CSS change. Therefore, when scrolling here, you have activated the "text1" to trigger some animation. In this example, we changed the text opacity for "TEXT_1_OPACITY" from 0 to 1, so it looks like the text appears when scrolling. </p>
+     	<p id="text1"> CDC study finds that Coronavirus kills far more Hispanic and Black children than White youths. Therefore children of color who come from low-income households, have chosen to do online learning.  </p>
 
      	<br><br>
 
@@ -177,10 +168,10 @@
 
      	<div class="col-8">
      		<div id="firstvisualdiv">
-               <p style="font-size: 20px;"> ID="firstvisualdiv" </p>
-               <p class="text1opacity"> TEXT_1_OPACITY </p>
-               <p class="text2opacity"> TEXT_2_OPACITY </p>
-               <p class="text3opacity"> TEXT_3_OPACITY </p>
+               <p style="font-size: 15px;"> "After her mother died of COVID-19, Angela Torres decided she could not send her daughter Eva, who is starting sixth grade, back into a school building. Eva started middle school at the Urban Institute of Mathematics in the Bronx online.”
+(Michael Noble Jr. for The Washington Post)" </p>
+               <p class="text1opacity"> For Black and Hispanic students, the number is nearly 46 percent. </p>
+               <p class="text2opacity"> For their White classmates, it is 33 percent. </p>
      		</div>
      	</div>
 
@@ -200,7 +191,7 @@
      	</div>
      	<div class="col-8">
      		<div id="secondvisualdiv">
-                <img class="img1" src="https://cdn.theculturetrip.com/wp-content/uploads/2016/09/mit_building_10_and_the_great_dome_cambridge_ma.jpg">
+                <img class="img1" src="https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/COVID-19%20and%20student%20learning%20in%20the%20United%20States%20The%20hurt%20could%20last%20a%20lifetime/SVGZ-COVID-StudentLearning-Ex3-rev.svgz">
      		</div>
      	</div>
       <div class="col-4">
