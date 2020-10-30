@@ -125,7 +125,6 @@
    }
 
 
-
    .text1opacity, .text2opacity {
         font-size:15px;
         fill:blue;
@@ -188,10 +187,7 @@
      	<p id="text4">Learning loss will probably be greatest among low-income, black, and Hispanic students. </p>
 
         <br><br>
-        <p>  It is because they are less likely to have access to high-quality remote learning such as devices they do not need to share and high-speed internet. </p>
-
-     	<br><br>
-        <p id="text5">This is the paragraph with id "text5". Now you can see we create a scene by changing this image's opacity. The process is similar that you can create a CSS class "img" for the image and then change its opacity when triggering "text5" paragraph.</p>
+        <p id="text5">  It is because they are less likely to have access to high-quality remote learning such as devices they do not need to share and high-speed internet. </p>
 
         <br><br>
         <p> As children's educational environments have shifted to online, access to the internet and access to parks to spend time away from screens has become more important. To what extent was NYC prepared for this situation?</p>
@@ -242,12 +238,8 @@
         	.setClassToggle(".text1opacity", "active")
         	.addTo(controller);
 
-    	new ScrollMagic.Scene({triggerElement: "#text2"})
+    	new ScrollMagic.Scene({triggerElement: "#text1"})
         	.setClassToggle(".text2opacity", "active")
-        	.addTo(controller);
-
-		  new ScrollMagic.Scene({triggerElement: "#text3"})
-        	.setClassToggle(".text3opacity", "active")
         	.addTo(controller);
 
       new ScrollMagic.Scene({triggerElement: "#text4"})
@@ -258,25 +250,30 @@
           .setClassToggle(".img1", "active")
           .addTo(controller);
 
+     new ScrollMagic.Scene({triggerElement: "#text6"})
+          .setClassToggle("#secondvisualdiv", "deactive")
+          .addTo(controller);
+
       new ScrollMagic.Scene({triggerElement: "#text6"})
-          .setClassToggle(".text1opacity", "active")
+          .setClassToggle(".img2", "active")
           .addTo(controller);
 
       new ScrollMagic.Scene({triggerElement: "#text7"})
-        	.setClassToggle(".text2opacity", "active")
-        	.addTo(controller);
+          .setClassToggle("#thirdvisualdiv", "deactive")
+          .addTo(controller);
+
+      new ScrollMagic.Scene({triggerElement: "#text7"})
+          .setClassToggle(".img3", "active")
+          .addTo(controller);
 
      new ScrollMagic.Scene({triggerElement: "#text8"})
-        	.setClassToggle(".text3opacity", "active")
+          .setClassToggle("#forthvisualdiv", "deactive")
           .addTo(controller);
 
-     new ScrollMagic.Scene({triggerElement: "#text9"})
-          .setClassToggle("#firstvisualdiv", "deactive")
+     new ScrollMagic.Scene({triggerElement: "#text8"})
+          .setClassToggle(".img4", "active")
           .addTo(controller);
 
-      new ScrollMagic.Scene({triggerElement: "#text10"})
-          .setClassToggle(".img2", "active")
-          .addTo(controller);
 
 </script>
 </body>
