@@ -85,8 +85,8 @@
 
 
    .img1{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 135%;
+    max-height: 135%;
     position: relative;
     opacity: 0;
     transition: opacity 1.2s;
@@ -95,8 +95,8 @@
    }
 
    .img2{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 70%;
+    max-height: 70%;
     position: relative;
     opacity: 0;
     transition: opacity 1.2s;
@@ -105,8 +105,8 @@
    }
 
    .img3{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 70%;
+    max-height: 70%;
     position: relative;
     opacity: 0;
     transition: opacity 1.2s;
@@ -115,8 +115,8 @@
    }
 
    .img4{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 70%;
+    max-height: 70%;
     position: relative;
     opacity: 0;
     transition: opacity 1.2s;
@@ -125,14 +125,22 @@
    }
 
 
-   .text1opacity, .text2opacity {
-        font-size:15px;
+   .text1opacity {
+        font-size:20px;
         fill:blue;
         opacity:0;
         transition: opacity 0.8s;
-        color: red;
          -webkit-transition: opacity 0.8s;
         }
+
+  .text2opacity {
+             font-size:15px;
+             fill:blue;
+             opacity:0;
+             transition: opacity 0.8s;
+             color: blue;
+              -webkit-transition: opacity 0.8s;
+             }
 
 
 
@@ -164,26 +172,30 @@
      	<div class="col-4">
 
       <br><br>
-      <p> Our topic is about remote learning during Covid-19. We primarily focus on the education situation for children in  New York City.  </p>
+      <p> Our topic is about remote learning during Covid-19. We primarily focus on the education situation for children in  New York City.   </p>
+      <br><br>
+      <p id="text1"> Given that access to education and green space are important social determinants for children's health, there are concerns that their health is being compromised by remote learning which now many of NYC's children are forced to go through under Covid-19.</p>
+
+     <br><br>
+     	<p > CDC study finds that Coronavirus kills far more Hispanic and Black children than White youths. </p>
       <br><br>
 
-     	<p id="text1"> CDC study finds that Coronavirus kills far more Hispanic and Black children than White youths. </p>
-      <br><br>
       <p id="text2"> Therefore children of color who come from low-income households, have chosen to do online learning.</p>
      	<br><br>
+      <br><br>
 
      	</div>
 
      	<div class="col-8">
      		<div id="firstvisualdiv">
-               <p style="font-size: 15px;"> "After her mother died of COVID-19, Angela Torres decided she could not send her daughter Eva, who is starting sixth grade, back into a school building. Eva started middle school at the Urban Institute of Mathematics in the Bronx online.”
+               <p class="text1opacity"> "After her mother died of COVID-19, Angela Torres decided she could not send her daughter Eva, who is starting sixth grade, back into a school building. Eva started middle school at the Urban Institute of Mathematics in the Bronx online.”
 (Michael Noble Jr. for The Washington Post)" </p>
-               <p class="text1opacity"> For Black and Hispanic students, the number is nearly 46 percent. </p>
-               <p class="text2opacity"> For their White classmates, it is 33 percent. </p>
+               <p class="text2opacity"> For Black and Hispanic students, the number is nearly 46 percent. For their White classmates, it is 33 percent. </p>
      		</div>
      	</div>
 
      	<div class="col-4">
+      <br><br>
      	<p id="text4">Learning loss will probably be greatest among low-income, black, and Hispanic students. </p>
 
         <br><br>
@@ -238,7 +250,7 @@
         	.setClassToggle(".text1opacity", "active")
         	.addTo(controller);
 
-    	new ScrollMagic.Scene({triggerElement: "#text1"})
+    	new ScrollMagic.Scene({triggerElement: "#text2"})
         	.setClassToggle(".text2opacity", "active")
         	.addTo(controller);
 
